@@ -13,7 +13,7 @@ def homePage(request):
             {"name": "anamika", "phone": 1234567981}
         ]
     }
-    return render(request, "home.html")
+    return render(request, "home.html", data)
 
 
 def login(request):

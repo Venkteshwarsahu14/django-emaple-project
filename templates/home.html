@@ -6,14 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home page..</title>
+    <style>
+        img,
+        div {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 
-<body>
+<body style="align-content: center;">
     <h1>Home page welcome you..</h1>
+    <img style="align-items: center;" src="static/images/venkiSample.jpg" alt="Italian Trulli">
     <div>
         <li><a href="/login">Log in</a></li>
         <li><a href="/register">register</a></li>
     </div>
+
+    {% for num in numbers %}
+    <div>{{num}}</div>
+    {%endfor%}
 </body>
 
 </html>
