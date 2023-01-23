@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet!</title>
+</head>
+
+<body>
+
+    <div>
+        {% if error %}
+        please insert all the fields properly
+        {%endif%}
+    </div>
+    <div class="row" style="text-align:center">
+        <div class="col-12">
+            <form method="post">
+                {% csrf_token%}
+                <label>Subject 1</label><br>
+                <input type="text" name="subject1" class="form-control" /><br>
+                <label>Subject 2</label><br>
+                <input type="text" name="subject2" class="form-control" /><br>
+                <label>Subject 3</label><br>
+                <input type="text" name="subject3" class="form-control" /><br>
+                <label>Subject 4</label><br>
+                <input type="text" name="subject4" class="form-control" /><br>
+                <label>Subject 5</label><br>
+                <input type="text" name="subject5" class="form-control" /><br><br>
+                <button type="submit">Marksheet</button><br><br>
+                <label>Total</label><br>
+                <input type="text" value="{{total}}" /><br>
+                <label>percentage</label><br>
+                <input type="text" value="{{percentage}}" /><br>
+                <label>division</label><br>
+                <input type="text" value="{{division}}" />
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

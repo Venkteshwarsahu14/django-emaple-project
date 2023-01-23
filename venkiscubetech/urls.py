@@ -23,7 +23,14 @@ urlpatterns = [
     path("login/", views.login),
     path('about-us/', views.aboutUs),
     path("blogs/", views.blogs),
+    path("submitform/", views.submitform, name="submitform"),
     path("register/", views.register),
     path("slug/", views.users),
-    path("blogs/<blogid>", views.blogsDetails)
+    path("blogs/<blogid>", views.blogsDetails),
+    path("userform/", views.userform),
+    path("thanku/", views.thanku),
+    path("calculator/", views.calculator),
+    path("evenodd/", views.evenodd),
+    path("marksheet/", views.marksheet),
+    path("newsdetails/<newsid>", views.newsdeatils)
 ]
